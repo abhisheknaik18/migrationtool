@@ -1,0 +1,12 @@
+item_id,item_name,category,price,description,available,prep_time
+M001,Classic Burger,Burgers,12.99,Beef patty with lettuce and tomato,true,15
+M002,Chicken Sandwich,Sandwiches,10.99,Grilled chicken with mayo,true,12
+M003,Caesar Salad,Salads,8.99,Romaine lettuce with caesar dressing,true,8
+M004,Margherita Pizza,Pizza,14.99,Tomato sauce and mozzarella,true,20
+M005,Spaghetti Carbonara,Pasta,13.99,Creamy pasta with bacon,true,18
+M006,Fish and Chips,Seafood,15.99,Battered fish with fries,true,22
+M007,Veggie Wrap,Wraps,9.99,Mixed vegetables in tortilla,true,10
+M008,Chocolate Cake,Desserts,6.99,Rich chocolate layer cake,true,5
+M009,Iced Coffee,Beverages,4.99,Cold brew coffee,true,3
+M010,Orange Juice,Beverages,3.99,Freshly squeezed orange juice,true,2
+

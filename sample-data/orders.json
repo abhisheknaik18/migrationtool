@@ -1,0 +1,53 @@
+[
+  {
+    "order_id": "ORD-2024-001",
+    "customer_name": "John Smith",
+    "customer_email": "john.smith@email.com",
+    "order_date": "2024-03-01",
+    "total_amount": 125.50,
+    "items": 3,
+    "status": "completed",
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-002",
+    "customer_name": "Emma Johnson",
+    "customer_email": "emma.j@email.com",
+    "order_date": "2024-03-02",
+    "total_amount": 89.99,
+    "items": 2,
+    "status": "completed",
+    "payment_method": "paypal"
+  },
+  {
+    "order_id": "ORD-2024-003",
+    "customer_name": "Michael Brown",
+    "customer_email": "m.brown@email.com",
+    "order_date": "2024-03-03",
+    "total_amount": 250.00,
+    "items": 5,
+    "status": "pending",
+    "payment_method": "credit_card"
+  },
+  {
+    "order_id": "ORD-2024-004",
+    "customer_name": "Sarah Davis",
+    "customer_email": "sarah.d@email.com",
+    "order_date": "2024-03-04",
+    "total_amount": 175.25,
+    "items": 4,
+    "status": "completed",
+    "payment_method": "debit_card"
+  },
+  {
+    "order_id": "ORD-2024-005",
+    "customer_name": "James Wilson",
+    "customer_email": "james.w@email.com",
+    "order_date": "2024-03-05",
+    "total_amount": 99.99,
+    "items": 2,
+    "status": "shipped",
+    "payment_method": "credit_card"
+  }
+]
+

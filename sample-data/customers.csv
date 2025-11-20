@@ -1,0 +1,12 @@
+customer_id,customer_name,email,phone,address,city,country,signup_date
+1001,John Smith,john.smith@email.com,+1-555-0101,123 Main St,New York,USA,2024-01-15
+1002,Emma Johnson,emma.j@email.com,+1-555-0102,456 Oak Ave,Los Angeles,USA,2024-01-18
+1003,Michael Brown,m.brown@email.com,+1-555-0103,789 Pine Rd,Chicago,USA,2024-01-22
+1004,Sarah Davis,sarah.d@email.com,+1-555-0104,321 Elm St,Houston,USA,2024-02-01
+1005,James Wilson,james.w@email.com,+1-555-0105,654 Maple Dr,Phoenix,USA,2024-02-05
+1006,Lisa Anderson,lisa.a@email.com,+1-555-0106,987 Cedar Ln,Philadelphia,USA,2024-02-10
+1007,David Martinez,david.m@email.com,+1-555-0107,147 Birch Ct,San Antonio,USA,2024-02-15
+1008,Jennifer Taylor,jen.taylor@email.com,+1-555-0108,258 Spruce Way,San Diego,USA,2024-02-20
+1009,Robert Thomas,rob.thomas@email.com,+1-555-0109,369 Walnut Pl,Dallas,USA,2024-02-25
+1010,Maria Garcia,maria.g@email.com,+1-555-0110,741 Cherry Blvd,San Jose,USA,2024-03-01
+

@@ -95,20 +95,30 @@ export default function Dashboard() {
     <div className="dashboard">
       <header className="dashboard-header">
         <div className="header-left">
-          <Database size={32} />
-          <div>
+          <Database size={28} className="header-icon" />
+          <div className="header-text">
             <h1>Data Migration</h1>
-            <p>Welcome back, {user?.fullName}</p>
+            <p>Welcome, {user?.fullName}</p>
           </div>
         </div>
         <div className="header-right">
-          <button onClick={() => setShowSettings(true)} className="btn-secondary">
+          <button 
+            onClick={() => setShowSettings(true)} 
+            className="btn-icon-header"
+            title="Settings"
+            aria-label="NovaTab Settings"
+          >
             <Settings size={20} />
-            NovaTab Settings
+            <span className="btn-label">Settings</span>
           </button>
-          <button onClick={logout} className="btn-secondary">
+          <button 
+            onClick={logout} 
+            className="btn-icon-header"
+            title="Logout"
+            aria-label="Logout"
+          >
             <LogOut size={20} />
-            Logout
+            <span className="btn-label">Logout</span>
           </button>
         </div>
       </header>
@@ -118,20 +128,23 @@ export default function Dashboard() {
           <h2>Migration Jobs</h2>
           <button onClick={() => setShowNewMigration(true)} className="btn-primary">
             <Plus size={20} />
-            New Migration
+            <span>New Migration</span>
           </button>
         </div>
 
         {loading ? (
-          <div className="loading">Loading migrations...</div>
+          <div className="loading">
+            <div className="spinner"></div>
+            <p>Loading migrations...</p>
+          </div>
         ) : jobs.length === 0 ? (
           <div className="empty-state">
             <Database size={64} />
             <h3>No migrations yet</h3>
             <p>Create your first data migration to get started</p>
-            <button onClick={() => setShowNewMigration(true)} className="btn-primary">
-              <Plus size={20} />
-              Create Migration
+            <button onClick={() => setShowNewMigration(true)} className="btn-primary btn-large">
+              <Plus size={24} />
+              <span>Create Migration</span>
             </button>
           </div>
         ) : (
@@ -166,24 +179,28 @@ export default function Dashboard() {
 
                 <div className="job-footer">
                   <span className="job-date">
-                    Created: {new Date(job.createdAt).toLocaleDateString()}
+                    {new Date(job.createdAt).toLocaleDateString()}
                   </span>
                   <div className="job-actions">
                     {job.status === 'pending' && (
                       <button
                         onClick={() => handleExecuteJob(job.id)}
-                        className="btn-icon success"
-                        title="Execute"
+                        className="btn-action success"
+                        title="Execute Migration"
+                        aria-label="Execute"
                       >
-                        <Play size={16} />
+                        <Play size={18} />
+                        <span className="btn-action-label">Execute</span>
                       </button>
                     )}
                     <button
                       onClick={() => handleDeleteJob(job.id)}
-                      className="btn-icon error"
-                      title="Delete"
+                      className="btn-action error"
+                      title="Delete Migration"
+                      aria-label="Delete"
                     >
-                      <Trash2 size={16} />
+                      <Trash2 size={18} />
+                      <span className="btn-action-label">Delete</span>
                     </button>
                   </div>
                 </div>
